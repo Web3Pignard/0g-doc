@@ -125,6 +125,7 @@ function delegatorShares() external view returns (uint);  // Total shares issued
 function getDelegation(address delegator) external view returns (address, uint);
 function commissionRate() external view returns (uint32);
 function withdrawalFeeInGwei() external view returns (uint96);
+function bondStatus() external view returns (BondStatus); // Get the bond status (0 Unspecified, 1 Unbonded, 2 Unbonding, 3 Bonded)
 ```
 
 :::tip **Understanding tokens()**
